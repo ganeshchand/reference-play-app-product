@@ -7,6 +7,6 @@
 * cd to project directory
 * `sbt run`
 
-###Running HelloWorld App
+###Running Product App
 * http://localhost:9000
-* http://localhost:9000/hello?name=yournamme
+* http://localhost:9000/products
