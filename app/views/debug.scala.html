@@ -1,0 +1,15 @@
+@import play.api.Configuration
+
+@import java.time.LocalDate
+@import java.time.format.DateTimeFormatter
+@()(implicit lang: Lang, configuration: Configuration)
+
+    @*
+
+    Displays debug information for the page footer
+    *@
+
+    debug: user=@configuration.getString("environment.user"),
+    lang=@lang.code,
+    date=@(LocalDate.now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")))
+

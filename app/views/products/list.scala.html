@@ -1,0 +1,14 @@
+@import play.api.Configuration
+@(products: List[Product])(implicit flash: Flash, request: RequestHeader, lang: Lang, messages: Messages, configuration: Configuration)
+
+
+
+@main(Messages("products.list")) {
+
+    <dl class="products">
+    @for(product <- products) {
+        <dt>@product.name</dt>
+        <dd>@product.description</dd>
+    }
+    </dl>
+}

@@ -11,9 +11,9 @@ libraryDependencies ++= Seq(
   cache,
   ws,
   specs2 % Test
+//  "org.apache.commons" % "commons-exec" % "1.3"
 )
 
-//libraryDependencies += "org.webjars" % "bootstrap" % "3.3.6"
 
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )  
 
