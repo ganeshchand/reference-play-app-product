@@ -27,7 +27,7 @@ object Product {
     * @param ean the EAN code of the [[Product]]
     * @return returns a [[Product]] that matches the given EAN code
     */
-  def findByEan(ean: Long) = products.filter(_.ean == ean)
+  def findByEan(ean: Long) = products.find(_.ean == ean)
 
 
   /**
@@ -35,7 +35,7 @@ object Product {
     * @param name the `name` of the [[Product]]
     * @return returns a [[Product]] matching the given `name`
     */
-  def findByName(name: String) = products.filter(_.name.toLowerCase == name.toLowerCase)
+  def findByName(name: String) = products.find(_.name.toLowerCase == name.toLowerCase)
 
 
   /**

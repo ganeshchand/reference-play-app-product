@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  specs2 % Test
-//  "org.apache.commons" % "commons-exec" % "1.3"
+  specs2 % Test,
+  "net.sf.barcode4j" % "barcode4j" % "2.0"
 )
 
 
